@@ -15,7 +15,11 @@ def get_japanese_emoticon(path, emote)
   # code goes here
   library = load_library(path)
   library.each do |emotion, languages|
-    
+    library[emotion].each do |lang, face|
+      if emote == face 
+        return library[emotion][:japanese]
+      end 
+    end 
   end   
 end
 
