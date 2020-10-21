@@ -24,6 +24,6 @@ def get_english_meaning(path, emote)
         return emotion.to_s 
       end 
     end
-    return "Sorry, that emoticon was not found"
   end
+  return "Sorry, that emoticon was not found"
 end
