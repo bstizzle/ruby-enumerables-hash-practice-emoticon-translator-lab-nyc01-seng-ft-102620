@@ -20,6 +20,9 @@ def get_english_meaning(path, emote)
   library = load_library(path)
   library.each do |emotion, languages|
     library[emotion].each do |lang, face|
+      if emote == face 
+        return lang 
+      end 
     end 
   end
 end
