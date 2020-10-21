@@ -18,9 +18,5 @@ end
 def get_english_meaning(path, emote)
   # code goes here
   library = load_library(path)
-  library.each do |emotion, languages|
-    library[languages].each do |lan, face|
-      puts "hi"
-    end   
-  end     
+      
 end
