@@ -18,6 +18,7 @@ end
 def get_english_meaning(path, emote)
   # code goes here
   library = load_library(path)
-  lib.dig(emote)
+  library.dig(emote)
   binding.pry
+  
 end
