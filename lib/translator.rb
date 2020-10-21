@@ -21,7 +21,7 @@ def get_english_meaning(path, emote)
   library.each do |emotion, languages|
     library[emotion].each do |lang, face|
       if emote == face 
-        return lang.to_s 
+        return emotion.to_s 
       end 
     end 
   end
