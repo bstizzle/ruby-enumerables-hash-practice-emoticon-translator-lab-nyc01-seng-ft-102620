@@ -16,11 +16,14 @@ def get_japanese_emoticon(path, emote)
   library = load_library(path)
   library.each do |emotion, languages|
     library[emotion].each do |lang, face|
-      if emote == face 
+      if emote == face
+        #end method and return the japanese version
         return library[emotion][:japanese]
       end 
     end 
   end   
+  #otherwise return this apology
+  return "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(path, emote)
