@@ -23,7 +23,7 @@ def get_english_meaning(path, emote)
       if emote == face 
         return emotion.to_s 
       else 
-        "Sorry, that emoticon was not found"
+        return "Sorry, that emoticon was not found"
       end 
     end 
   end
