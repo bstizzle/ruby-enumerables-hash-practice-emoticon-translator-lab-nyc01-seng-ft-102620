@@ -1,5 +1,6 @@
 # require modules here
 require 'yaml'
+require 'pry'
 
 def load_library(path)
   # code goes here
@@ -17,6 +18,7 @@ end
 def get_english_meaning(path, emote)
   # code goes here
   library = load_library(path)
+  binding.pry
   library.each do |emotion|
     library[emotion].each do |face|
       if emote == face
