@@ -20,7 +20,5 @@ def get_english_meaning(path, emote)
   library = load_library(path)
   library.each do |emotion, languages|
     puts languages
-  end 
-  binding.pry
-  
+  end
 end
