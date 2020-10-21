@@ -5,7 +5,7 @@ def load_library
   # code goes here
   emos = YAML.load_file('lib/emoticons.yml')
   emos.map do |k, v|
-    emos[k] = {:english => v[]
+    emos[k] = {:english => v[0], :japanese => v[1]}
   end 
 end
 
