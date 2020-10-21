@@ -19,9 +19,9 @@ def get_english_meaning(path, emote)
   # code goes here
   library = load_library(path)
   #binding.pry
-  library.each do |emotion|
+  library.each do |emotion, languages|
     binding.pry
-    library[emotion].each do |face|
+    library[languages].each do |face|
       binding.pry
       if emote == face
         return emotion 
