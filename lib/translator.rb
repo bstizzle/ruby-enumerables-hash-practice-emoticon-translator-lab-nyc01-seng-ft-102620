@@ -25,4 +25,5 @@ def get_english_meaning(path, emote)
       end 
     end 
   end
+  puts ""
 end
