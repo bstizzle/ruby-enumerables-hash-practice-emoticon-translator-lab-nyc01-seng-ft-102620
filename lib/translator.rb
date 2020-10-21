@@ -7,7 +7,6 @@ def load_library
   emos.map do |k, v|
     emos[k] = {:english => v[0], :japanese => v[1]}
   end
-  emos
 end
 
 def get_japanese_emoticon
