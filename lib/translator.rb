@@ -22,9 +22,8 @@ def get_english_meaning(path, emote)
     library[emotion].each do |lang, face|
       if emote == face 
         return emotion.to_s 
-      else 
-        return "Sorry, that emoticon was not found"
       end 
-    end 
+    end
+    return "Sorry, that emoticon was not found"
   end
 end
